@@ -89,7 +89,6 @@ extern "C" {
 /* Region ------------------------------------*/
 /* the region listed here will be linked in the MW code */
 /* the application (on sys_conf.h) shall just configure one region at the time */
-/*#define REGION_AS923*/
 #define REGION_AS923
 /*#define REGION_AU915*/
 /*#define REGION_CN470*/
@@ -110,7 +109,7 @@ extern "C" {
  *        - CHANNEL_PLAN_GROUP_AS923_4    (Freq offset = -5.90 MHz / Freq range = 917-920MHz)
  *        - CHANNEL_PLAN_GROUP_AS923_1_JP (Freq offset = 0.0 MHz   / Freq range = 920.6-923.4MHz)
  */
-#define REGION_AS923_DEFAULT_CHANNEL_PLAN              CHANNEL_PLAN_GROUP_AS923_1
+#define REGION_AS923_DEFAULT_CHANNEL_PLAN              CHANNEL_PLAN_GROUP_AS923_2
 
 /*!
  * @brief Limits the number usable channels by default for AU915, CN470 and US915 regions
